@@ -2,3 +2,6 @@
 
 *.fastq.gz
 *.fastq
+*.fasta
+*.BAM
+*.SAM
