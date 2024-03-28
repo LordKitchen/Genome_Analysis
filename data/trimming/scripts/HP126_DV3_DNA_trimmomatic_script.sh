@@ -1,6 +1,5 @@
 #!/bin/bash
 #SBATCH -A uppmax2024-2-7
-#SBATCH --reservation=uppmax2024-2-7_2
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
@@ -23,8 +22,8 @@ trimmomatic PE \
 $PROJDIR/SRR24413065_1.fastq.gz $PROJDIR/SRR24413065_2.fastq.gz \
 ../main_output/HP126_DNA_trimmomatic_forward_paired.fastq.gz ../main_output/HP126_DNA_trimmomatic_forward_unpaired.fastq.gz ../main_output/HP126_DNA_trimmomatic_reverse_paired.fastq.gz ../main_output/HP126_DNA_trimmomatic_reverse_unpaired.fastq.gz \
 ILLUMINACLIP:TruSeq2-PE.fa:2:30:10 \
-LEADING:25 \
-TRAILING:25 \
+LEADING:20 \
+TRAILING:20 \
 SLIDINGWINDOW:4:20 \
 MINLEN:70
 
@@ -35,8 +34,8 @@ trimmomatic PE \
 $PROJDIR/SRR24413080_1.fastq.gz $PROJDIR/SRR24413080_2.fastq.gz \
 ../main_output/DV3_DNA_trimmomatic_forward_paired.fastq.gz ../main_output/DV3_DNA_trimmomatic_forward_unpaired.fastq.gz ../main_output/DV3_DNA_trimmomatic_reverse_paired.fastq.gz ../main_output/DV3_DNA_trimmomatic_reverse_unpaired.fastq.gz \
 ILLUMINACLIP:TruSeq2-PE.fa:2:30:10 \
-LEADING:25 \
-TRAILING:25 \
+LEADING:20 \
+TRAILING:20 \
 SLIDINGWINDOW:4:20 \
 MINLEN:70
 
