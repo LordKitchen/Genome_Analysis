@@ -4,7 +4,7 @@
 #SBATCH -p core
 #SBATCH -n 2
 #SBATCH -e error.log
-#SBATCH -t 00:30:00
+#SBATCH -t 00:10:00
 #SBATCH -J gape_trimmomatic
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user gabrielandre.pettersson.9739@student.uu.se
@@ -25,7 +25,7 @@ ILLUMINACLIP:TruSeq2-PE.fa:2:30:10 \
 LEADING:20 \
 TRAILING:20 \
 SLIDINGWINDOW:4:20 \
-MINLEN:70
+MINLEN:200
 
 trimmomatic PE \
 -threads 2 \
@@ -37,6 +37,6 @@ ILLUMINACLIP:TruSeq2-PE.fa:2:30:10 \
 LEADING:20 \
 TRAILING:20 \
 SLIDINGWINDOW:4:20 \
-MINLEN:70
+MINLEN:200
 
 
