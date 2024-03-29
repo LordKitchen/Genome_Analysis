@@ -5,3 +5,6 @@
 *.fasta
 *.BAM
 *.SAM
+*.zip
+*.out
+
