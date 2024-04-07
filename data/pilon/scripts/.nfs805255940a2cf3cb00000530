@@ -1,0 +1,36 @@
+Writing filtered delta file HP126_mummerplot.filter
+Reading delta file HP126_mummerplot.filter
+Writing plot files HP126_mummerplot.fplot, HP126_mummerplot.rplot
+Writing gnuplot script HP126_mummerplot.gp
+Forking mouse listener
+Rendering plot to screen
+Error: Can't open display: localhost:12.0
+WARNING: Unable to query clipboard with xclip
+
+gnuplot: unable to open display 'localhost:12.0'
+gnuplot: X11 aborted.
+-- INTERACTIVE MODE --
+consult gnuplot docs for command list
+mouse 1: coords to clipboard
+mouse 2: mark on plot
+mouse 3: zoom box
+'h' for help in plot window
+enter to exit
+Writing filtered delta file DV3_mummerplot.filter
+Reading delta file DV3_mummerplot.filter
+Writing plot files DV3_mummerplot.fplot, DV3_mummerplot.rplot
+Writing gnuplot script DV3_mummerplot.gp
+Forking mouse listener
+Rendering plot to screen
+Error: Can't open display: localhost:12.0
+WARNING: Unable to query clipboard with xclip
+
+gnuplot: unable to open display 'localhost:12.0'
+gnuplot: X11 aborted.
+-- INTERACTIVE MODE --
+consult gnuplot docs for command list
+mouse 1: coords to clipboard
+mouse 2: mark on plot
+mouse 3: zoom box
+'h' for help in plot window
+enter to exit
