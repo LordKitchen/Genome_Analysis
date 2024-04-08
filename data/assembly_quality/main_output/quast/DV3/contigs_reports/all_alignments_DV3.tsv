@@ -1,0 +1,9 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+523394	7531310	1	7007906	CP100443.1	contig_1_pilon	100.0		True
+CONTIG	contig_1_pilon	7007906	correct
+170388	1202972	1032582	1	CP100444.1	contig_2_pilon	100.0		True
+CONTIG	contig_2_pilon	1032582	correct
+8	192255	192248	1	CP100444.1	contig_3_pilon	100.0		True
+CONTIG	contig_3_pilon	192251	correct
+8533764	9084844	551129	71	CP100443.1	contig_4_pilon	99.99		True
+CONTIG	contig_4_pilon	551129	correct

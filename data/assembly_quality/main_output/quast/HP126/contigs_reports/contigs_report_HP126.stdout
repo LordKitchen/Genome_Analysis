@@ -1,0 +1,61 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [CP100397.1]
+	Loaded [CP100398.1]
+	Total Regions: 2
+	Total Region Length: 9619655
+Analyzing contigs...
+CONTIG: contig_1_pilon (6996028bp)
+Best alignment score: 6996028.0 (LEN: 6996028, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 528515 7524541 | 1 6996028 | 6996027 6996028 | 100.0 | CP100397.1 contig_1_pilon
+
+CONTIG: contig_2_pilon (170461bp)
+Best alignment score: 170385.0 (LEN: 170385, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 3 170387 | 170385 1 | 170385 170385 | 100.0 | CP100398.1 contig_2_pilon
+
+CONTIG: contig_3_pilon (551129bp)
+Best alignment score: 551060.0 (LEN: 551060, IDY: 100.00), Total number of alignments: 2
+		This contig has 2 significant alignments. [An ambiguously mapped contig]
+		Using only first of these alignment (option --ambiguity-usage is set to "one"):
+			Alignment: 8 551079 | 70 551129 | 551072 551060 | 100.0 | CP100397.1 contig_3_pilon
+			Skipping alignment 8557130 9108201 | 551129 70 | 551072 551060 | 100.0 | CP100397.1 contig_3_pilon
+
+CONTIG: contig_4_pilon (1054438bp)
+Best alignment score: 1054438.0 (LEN: 1054438, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 7524543 8578983 | 1054438 1 | 1054441 1054438 | 100.0 | CP100397.1 contig_4_pilon
+
+Analyzing coverage...
+Writing SNPs into /domus/h1/gape9739/Genome_Analysis/data/assembly_quality/main_output/quast/HP126/contigs_reports/minimap_output/HP126.used_snps.gz
+
+Analysis is finished!
+Founded SNPs were written into /domus/h1/gape9739/Genome_Analysis/data/assembly_quality/main_output/quast/HP126/contigs_reports/minimap_output/HP126.used_snps.gz
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap: 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Contig Bases: 0
+
+Ambiguously Mapped Contigs: 1
+Total Bases in Ambiguously Mapped Contigs: 551129
+Extra Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used.
+
+	Covered Bases: 8749360
+
+	SNPs: 20
+	Insertions: 37
+	Deletions: 51
+

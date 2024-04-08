@@ -1,0 +1,51 @@
+Assembly	HP126
+# contigs (>= 0 bp)	4
+# contigs (>= 1000 bp)	4
+# contigs (>= 5000 bp)	4
+# contigs (>= 10000 bp)	4
+# contigs (>= 25000 bp)	4
+# contigs (>= 50000 bp)	4
+Total length (>= 0 bp)	8772056
+Total length (>= 1000 bp)	8772056
+Total length (>= 5000 bp)	8772056
+Total length (>= 10000 bp)	8772056
+Total length (>= 25000 bp)	8772056
+Total length (>= 50000 bp)	8772056
+# contigs	4
+Largest contig	6996028
+Total length	8772056
+Reference length	9619655
+GC (%)	72.00
+Reference GC (%)	71.93
+N50	6996028
+NG50	6996028
+N75	6996028
+NG75	1054438
+L50	1
+LG50	1
+L75	1
+LG75	2
+# misassemblies	0
+# misassembled contigs	0
+Misassembled contigs length	0
+# local misassemblies	0
+# scaffold gap ext. mis.	0
+# scaffold gap loc. mis.	0
+# unaligned mis. contigs	0
+# unaligned contigs	0 + 0 part
+Unaligned length	0
+Genome fraction (%)	90.953
+Duplication ratio	1.003
+# N's per 100 kbp	0.00
+# mismatches per 100 kbp	0.23
+# indels per 100 kbp	0.69
+Largest alignment	6996028
+Total aligned length	8771911
+NA50	6996028
+NGA50	6996028
+NA75	6996028
+NGA75	1054438
+LA50	1
+LGA50	1
+LA75	1
+LGA75	2

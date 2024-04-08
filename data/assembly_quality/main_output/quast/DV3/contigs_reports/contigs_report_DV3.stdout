@@ -1,0 +1,65 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [CP100443.1]
+	Loaded [CP100444.1]
+	Total Regions: 2
+	Total Region Length: 10838897
+Analyzing contigs...
+CONTIG: contig_1_pilon (7007906bp)
+Best alignment score: 7007906.0 (LEN: 7007906, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 523394 7531310 | 1 7007906 | 7007917 7007906 | 100.0 | CP100443.1 contig_1_pilon
+
+CONTIG: contig_2_pilon (1032582bp)
+Best alignment score: 1032582.0 (LEN: 1032582, IDY: 100.00), Total number of alignments: 2
+		This contig has 2 significant alignments. [An ambiguously mapped contig]
+		Using only first of these alignment (option --ambiguity-usage is set to "one"):
+			Alignment: 170388 1202972 | 1032582 1 | 1032585 1032582 | 100.0 | CP100444.1 contig_2_pilon
+			Skipping alignment 7501179 8533763 | 1032582 1 | 1032585 1032582 | 100.0 | CP100443.1 contig_2_pilon
+
+CONTIG: contig_3_pilon (192251bp)
+Best alignment score: 192248.0 (LEN: 192248, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 8 192255 | 192248 1 | 192248 192248 | 100.0 | CP100444.1 contig_3_pilon
+
+CONTIG: contig_4_pilon (551129bp)
+Best alignment score: 551003.9 (LEN: 551059, IDY: 99.99), Total number of alignments: 3
+		This contig has 3 significant alignments. [An ambiguously mapped contig]
+		Using only first of these alignment (option --ambiguity-usage is set to "one"):
+			Alignment: 8533764 9084844 | 551129 71 | 551081 551059 | 99.99 | CP100443.1 contig_4_pilon
+			Skipping alignment 1202973 1754053 | 551129 71 | 551081 551059 | 99.99 | CP100444.1 contig_4_pilon
+			Skipping alignment 1 551081 | 71 551129 | 551081 551059 | 99.99 | CP100443.1 contig_4_pilon
+
+Analyzing coverage...
+Writing SNPs into /domus/h1/gape9739/Genome_Analysis/data/assembly_quality/main_output/quast/DV3/contigs_reports/minimap_output/DV3.used_snps.gz
+
+Analysis is finished!
+Founded SNPs were written into /domus/h1/gape9739/Genome_Analysis/data/assembly_quality/main_output/quast/DV3/contigs_reports/minimap_output/DV3.used_snps.gz
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap: 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Contig Bases: 0
+
+Ambiguously Mapped Contigs: 2
+Total Bases in Ambiguously Mapped Contigs: 1583711
+Extra Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used.
+
+	Covered Bases: 8761963
+
+	SNPs: 16
+	Insertions: 40
+	Deletions: 76
+

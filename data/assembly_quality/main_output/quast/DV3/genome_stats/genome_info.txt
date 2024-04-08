@@ -1,0 +1,15 @@
+reference chromosomes:
+	CP100443.1 (total length: 9084844 bp, total length without N's: 9084844 bp, maximal covered length: 7558998 bp)
+	CP100444.1 (total length: 1754053 bp, total length without N's: 1754053 bp, maximal covered length: 1202965 bp)
+
+total genome size: 10838897
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+DV3                      | 80.838    | 1.003       | 3         | -         | -         | -         | -         |
