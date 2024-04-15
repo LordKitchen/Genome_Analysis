@@ -2,9 +2,9 @@
 #SBATCH -A uppmax2024-2-7
 #SBATCH -M snowy
 #SBATCH -p core
-#SBATCH -n 4
+#SBATCH -n 6
 #SBATCH -e error_HP126.log
-#SBATCH -t 01:00:00
+#SBATCH -t 02:00:00
 #SBATCH -J gape_bwa1
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user gabrielandre.pettersson.9739@student.uu.se
@@ -22,11 +22,17 @@ STORAGE=/proj/uppmax2024-2-7/nobackup/work
 
 bwa index ../input_data/HP126_assembly.fasta 
 
-bwa mem ../input_data/HP126_assembly.fasta $PROJDIR/SRR24516459_1.fastq.gz > $STORAGE/HP126_RNA_align_c.sam &
+bwa mem ../input_data/HP126_assembly.fasta $PROJDIR/SRR24516459_1.fastq.gz $PROJDIR/SRR24516459_2.fastq.gz > $STORAGE/HP126_RNA_align_c.sam &
 
-bwa mem ../input_data/HP126_assembly.fasta $PROJDIR/SRR24516460_1.fastq.gz > $STORAGE/HP126_RNA_align_b.sam &
+bwa mem ../input_data/HP126_assembly.fasta $PROJDIR/SRR24516460_1.fastq.gz $PROJDIR/SRR24516460_2.fastq.gz > $STORAGE/HP126_RNA_align_b.sam &
 
-bwa mem ../input_data/HP126_assembly.fasta $PROJDIR/SRR24516461_1.fastq.gz > $STORAGE/HP126_RNA_align_a.sam &
+bwa mem ../input_data/HP126_assembly.fasta $PROJDIR/SRR24516461_1.fastq.gz $PROJDIR/SRR24516461_2.fastq.gz > $STORAGE/HP126_RNA_align_a.sam &
+
+bwa mem ../input_data/HP126_assembly.fasta $PROJDIR/SRR24516462_1.fastq.gz $PROJDIR/SRR24516462_2.fastq.gz > $STORAGE/HP126_RNA_align_R7_c.sam &
+
+bwa mem ../input_data/HP126_assembly.fasta $PROJDIR/SRR24516463_1.fastq.gz $PROJDIR/SRR24516463_2.fastq.gz > $STORAGE/HP126_RNA_align_R7_b.sam &
+
+bwa mem ../input_data/HP126_assembly.fasta $PROJDIR/SRR24516464_1.fastq.gz $PROJDIR/SRR24516464_2.fastq.gz > $STORAGE/HP126_RNA_align_R7_a.sam &
 wait
 
 
@@ -39,11 +45,25 @@ samtools view -b $STORAGE/HP126_RNA_align_b.sam > ../temp_files/HP126_RNA_align_
 samtools view -b $STORAGE/HP126_RNA_align_a.sam > ../temp_files/HP126_RNA_align_a.bam
 
 
+samtools view -b $STORAGE/HP126_RNA_align_R7_c.sam > ../temp_files/HP126_RNA_align_R7_c.bam
+
+samtools view -b $STORAGE/HP126_RNA_align_R7_b.sam > ../temp_files/HP126_RNA_align_R7_b.bam
+
+samtools view -b $STORAGE/HP126_RNA_align_R7_a.sam > ../temp_files/HP126_RNA_align_R7_a.bam
+
+
 samtools sort ../temp_files/HP126_RNA_align_c.bam -o ../main_output/HP126_RNA_align_sorted_c.bam
 
 samtools sort ../temp_files/HP126_RNA_align_b.bam -o ../main_output/HP126_RNA_align_sorted_b.bam
 
 samtools sort ../temp_files/HP126_RNA_align_a.bam -o ../main_output/HP126_RNA_align_sorted_a.bam
+
+
+samtools sort ../temp_files/HP126_RNA_align_R7_c.bam -o ../main_output/HP126_RNA_align_sorted_R7_c.bam
+
+samtools sort ../temp_files/HP126_RNA_align_R7_b.bam -o ../main_output/HP126_RNA_align_sorted_R7_b.bam
+
+samtools sort ../temp_files/HP126_RNA_align_R7_a.bam -o ../main_output/HP126_RNA_align_sorted_R7_a.bam
 
 
 samtools index ../main_output/HP126_RNA_align_sorted_c.bam
@@ -52,4 +72,11 @@ samtools index ../main_output/HP126_RNA_align_sorted_b.bam
 
 samtools index ../main_output/HP126_RNA_align_sorted_a.bam
 
-rm $STORAGE/HP126_RNA_align_a.sam $STORAGE/HP126_RNA_align_b.sam $STORAGE/HP126_RNA_align_c.sam ../temp_files/HP126_RNA_align_a.bam ../temp_files/HP126_RNA_align_b.bam ../temp_files/HP126_RNA_align_c.bam
+
+samtools index ../main_output/HP126_RNA_align_sorted_R7_c.bam
+
+samtools index ../main_output/HP126_RNA_align_sorted_R7_b.bam
+
+samtools index ../main_output/HP126_RNA_align_sorted_R7_a.bam
+
+rm $STORAGE/HP126_RNA_align_a.sam $STORAGE/HP126_RNA_align_b.sam $STORAGE/HP126_RNA_align_c.sam ../temp_files/HP126_RNA_align_a.bam ../temp_files/HP126_RNA_align_b.bam ../temp_files/HP126_RNA_align_c.bam 
