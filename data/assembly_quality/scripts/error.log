@@ -1,0 +1,25 @@
+Writing filtered delta file HP126_mummerplot.filter
+Reading delta file HP126_mummerplot.filter
+Writing plot files HP126_mummerplot.fplot, HP126_mummerplot.rplot
+Writing gnuplot script HP126_mummerplot.gp
+Rendering plot HP126_mummerplot.png
+Writing filtered delta file DV3_mummerplot.filter
+Reading delta file DV3_mummerplot.filter
+Writing plot files DV3_mummerplot.fplot, DV3_mummerplot.rplot
+Writing gnuplot script DV3_mummerplot.gp
+Rendering plot DV3_mummerplot.png
+Writing filtered delta file HP126_vs_R7_mummerplot.filter
+Reading delta file HP126_vs_R7_mummerplot.filter
+Writing plot files HP126_vs_R7_mummerplot.fplot, HP126_vs_R7_mummerplot.rplot
+Writing gnuplot script HP126_vs_R7_mummerplot.gp
+Rendering plot HP126_vs_R7_mummerplot.png
+Writing filtered delta file DV3_vs_R7_mummerplot.filter
+Reading delta file DV3_vs_R7_mummerplot.filter
+Writing plot files DV3_vs_R7_mummerplot.fplot, DV3_vs_R7_mummerplot.rplot
+Writing gnuplot script DV3_vs_R7_mummerplot.gp
+Rendering plot DV3_vs_R7_mummerplot.png
+Writing filtered delta file HP126_vs_DV3_mummerplot.filter
+Reading delta file HP126_vs_DV3_mummerplot.filter
+Writing plot files HP126_vs_DV3_mummerplot.fplot, HP126_vs_DV3_mummerplot.rplot
+Writing gnuplot script HP126_vs_DV3_mummerplot.gp
+Rendering plot HP126_vs_DV3_mummerplot.png

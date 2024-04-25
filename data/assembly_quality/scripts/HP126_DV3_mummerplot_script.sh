@@ -23,9 +23,22 @@ nucmer --delta ../temp_files/HP126_mummer.delta --threads 2 ../input_data/HP126_
 
 nucmer --delta ../temp_files/DV3_mummer.delta --threads 2 ../input_data/DV3_genome.fasta ../input_data/DV3.fasta
 
+
+nucmer --delta ../temp_files/HP126_R7_mummer.delta --threads 2 ../input_data/R7_genome.fasta ../input_data/HP126.fasta
+
+nucmer --delta ../temp_files/DV3_R7_mummer.delta --threads 2 ../input_data/R7_genome.fasta ../input_data/DV3.fasta
+
+nucmer --delta ../temp_files/HP126_DV3_mummer.delta --threads 2 ../input_data/HP126.fasta ../input_data/DV3.fasta
+
 #Mummerplot adapted for nucmer using filter and -l, with -R and -Q specifying that I have both reference and query
 
-mummerplot --filter -R ../input_data/HP126_genome.fasta -Q ../input_data/HP126.fasta -l -p HP126_mummerplot ../temp_files/HP126_mummer.delta
+mummerplot --filter --png --large -R ../input_data/HP126_genome.fasta -Q ../input_data/HP126.fasta -l -p HP126_mummerplot ../temp_files/HP126_mummer.delta
 
-mummerplot --filter -R ../input_data/DV3_genome.fasta -Q ../input_data/DV3.fasta -l -p DV3_mummerplot ../temp_files/DV3_mummer.delta
+mummerplot --filter --png --large -R ../input_data/DV3_genome.fasta -Q ../input_data/DV3.fasta -l -p DV3_mummerplot ../temp_files/DV3_mummer.delta
 
+
+mummerplot --filter --png --large -R ../input_data/R7_genome.fasta -Q ../input_data/HP126.fasta -l -p HP126_vs_R7_mummerplot ../temp_files/HP126_R7_mummer.delta
+
+mummerplot --filter --png --large -R ../input_data/R7_genome.fasta -Q ../input_data/DV3.fasta -l -p DV3_vs_R7_mummerplot ../temp_files/DV3_R7_mummer.delta
+
+mummerplot --filter --png --large -R ../input_data/HP126.fasta -Q ../input_data/DV3.fasta -l -p HP126_vs_DV3_mummerplot ../temp_files/HP126_DV3_mummer.delta
