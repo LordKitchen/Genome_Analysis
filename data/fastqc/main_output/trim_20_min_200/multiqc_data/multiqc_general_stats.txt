@@ -1,0 +1,9 @@
+Sample	FastQC_mqc-generalstats-fastqc-percent_duplicates	FastQC_mqc-generalstats-fastqc-percent_gc	FastQC_mqc-generalstats-fastqc-avg_sequence_length	FastQC_mqc-generalstats-fastqc-percent_fails	FastQC_mqc-generalstats-fastqc-total_sequences
+DV3_DNA_trimmomatic_forward_paired	2.183960186082558	71.0	289.74618943059966	0.0	656726.0
+DV3_DNA_trimmomatic_forward_unpaired	1.0497629687484533	72.0	273.3182665683624	0.0	305175.0
+DV3_DNA_trimmomatic_reverse_paired	2.185861661960871	71.0	235.79491446965704	0.0	656726.0
+DV3_DNA_trimmomatic_reverse_unpaired	0.22335673261008537	71.0	223.05041480536056	10.0	9402.0
+HP126_DNA_trimmomatic_forward_paired	2.352983948298373	71.0	289.5038292121333	0.0	759164.0
+HP126_DNA_trimmomatic_forward_unpaired	0.9907603984903659	72.0	272.59578849038235	0.0	304024.0
+HP126_DNA_trimmomatic_reverse_paired	2.3443646137902334	71.0	237.6003090241371	10.0	759164.0
+HP126_DNA_trimmomatic_reverse_unpaired	0.18780109414549884	71.0	224.1900057156855	10.0	12247.0
